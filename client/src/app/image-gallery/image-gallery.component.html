@@ -1,0 +1,8 @@
+<header class="header">
+    <app-image-search (onSearch)="handleSearch($event)"></app-image-search>
+</header>
+<main class="content">
+    <figure *ngFor="let image of images$ | async; let idx = index" [class.bigger]="idx % 3">
+      <img [src]="image.imageSrc" alt="simple image">
+    </figure>
+</main>

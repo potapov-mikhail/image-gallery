@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  padding: 10px;
+  background: #323232;
+  position: fixed;
+}
+
+.content {
+  grid-gap: 1em;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content figure {
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  height: auto;
+  max-width: 100%;
+  flex: 1;
+  object-fit: cover;
+}
+
+.bigger {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
